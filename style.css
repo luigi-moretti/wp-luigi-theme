@@ -1,0 +1,109 @@
+/*
+Theme Name: Frontend Dev Portfolio
+Description: Um tema WordPress moderno para desenvolvedor frontend baseado em Tailwind CSS
+Author: Luigi
+Version: 1.0.0
+License: GPL v2 or later
+Text Domain: frontend-dev-portfolio
+*/
+
+/* Reset básico e estilos globais */
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: "Space Grotesk", "Noto Sans", sans-serif;
+    background-color: #fafafa;
+}
+
+/* Estilos do WordPress */
+.alignleft { float: left; margin-right: 1rem; }
+.alignright { float: right; margin-left: 1rem; }
+.aligncenter { display: block; margin: 0 auto; }
+
+.wp-caption {
+    background: #fff;
+    border: 1px solid #f0f0f0;
+    max-width: 96%;
+    padding: 5px 3px 10px;
+    text-align: center;
+}
+
+.wp-caption.alignnone {
+    margin: 5px 20px 20px 0;
+}
+
+.wp-caption.alignleft {
+    margin: 5px 20px 20px 0;
+}
+
+.wp-caption.alignright {
+    margin: 5px 0 20px 20px;
+}
+
+.wp-caption img {
+    border: 0 none;
+    height: auto;
+    margin: 0;
+    max-width: 98.5%;
+    padding: 0;
+    width: auto;
+}
+
+.wp-caption p.wp-caption-text {
+    font-size: 11px;
+    line-height: 17px;
+    margin: 0;
+    padding: 0 4px 5px;
+}
+
+/* Responsividade para imagens */
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Estilos customizados baseados no design original */
+.layout-container {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.header-navigation {
+    border-bottom: 1px solid #eceeee;
+    padding: 0.75rem 2.5rem;
+    background: white;
+}
+
+.main-content {
+    padding: 1.25rem 10rem;
+    flex: 1;
+    display: flex;
+    justify-content: center;
+}
+
+.content-container {
+    max-width: 960px;
+    width: 100%;
+}
+
+/* Media queries para responsividade */
+@media (max-width: 1024px) {
+    .main-content {
+        padding: 1.25rem 2rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .main-content {
+        padding: 1.25rem 1rem;
+    }
+    
+    .header-navigation {
+        padding: 0.75rem 1rem;
+    }
+}
