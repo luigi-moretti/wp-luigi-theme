@@ -1,0 +1,39 @@
+<!-- wp:template-part {"slug":"header","tagName":"header"} /-->
+
+<!-- wp:group {"style":{"spacing":{"padding":{"top":"2rem","bottom":"2rem","left":"1rem","right":"1rem"}}},"backgroundColor":"fundo","layout":{"type":"constrained","contentSize":"960px"}} -->
+<div class="wp-block-group has-fundo-background-color has-background" style="padding-top:2rem;padding-right:1rem;padding-bottom:2rem;padding-left:1rem">
+    
+    <!-- wp:heading {"level":1,"style":{"typography":{"fontSize":"2rem","fontWeight":"700"}},"textColor":"texto-principal"} -->
+    <h1 class="wp-block-heading has-texto-principal-color has-text-color" style="font-size:2rem;font-weight:700">Blog</h1>
+    <!-- /wp:heading -->
+    
+    <!-- wp:query {"queryId":1,"query":{"perPage":10,"pages":0,"offset":0,"postType":"post","order":"desc","orderBy":"date","author":"","search":"","exclude":[],"sticky":"","inherit":true}} -->
+    <div class="wp-block-query">
+        <!-- wp:post-template -->
+            <!-- wp:group {"style":{"spacing":{"margin":{"bottom":"2rem"}}},"layout":{"type":"constrained"}} -->
+            <div class="wp-block-group" style="margin-bottom:2rem">
+                <!-- wp:post-title {"isLink":true,"style":{"typography":{"fontSize":"1.5rem","fontWeight":"700"}},"textColor":"texto-principal"} /-->
+                <!-- wp:post-excerpt {"style":{"spacing":{"margin":{"top":"0.5rem"}}},"textColor":"texto-secundario"} /-->
+                <!-- wp:post-date {"style":{"spacing":{"margin":{"top":"0.5rem"}}},"textColor":"texto-secundario"} /-->
+            </div>
+            <!-- /wp:group -->
+        <!-- /wp:post-template -->
+        
+        <!-- wp:query-pagination -->
+        <!-- wp:query-pagination-previous /-->
+        <!-- wp:query-pagination-numbers /-->
+        <!-- wp:query-pagination-next /-->
+        <!-- /wp:query-pagination -->
+        
+        <!-- wp:query-no-results -->
+        <!-- wp:paragraph {"textColor":"texto-secundario"} -->
+        <p class="has-texto-secundario-color has-text-color">Nenhum post encontrado.</p>
+        <!-- /wp:paragraph -->
+        <!-- /wp:query-no-results -->
+    </div>
+    <!-- /wp:query -->
+    
+</div>
+<!-- /wp:group -->
+
+<!-- wp:template-part {"slug":"footer","tagName":"footer"} /-->

@@ -1,10 +1,13 @@
 /*
 Theme Name: Frontend Dev Portfolio
-Description: Um tema WordPress moderno para desenvolvedor frontend baseado em Tailwind CSS
+Description: Um tema de blocos WordPress moderno para desenvolvedor frontend com Tailwind CSS
 Author: Luigi
-Version: 1.0.0
+Version: 2.0.0
 License: GPL v2 or later
 Text Domain: frontend-dev-portfolio
+Requires at least: 6.0
+Tested up to: 6.4
+Requires PHP: 7.4
 */
 
 /* Reset básico e estilos globais */

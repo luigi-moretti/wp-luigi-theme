@@ -1,0 +1,66 @@
+<!-- wp:template-part {"slug":"header","tagName":"header"} /-->
+
+<!-- wp:group {"style":{"spacing":{"padding":{"top":"1.25rem","bottom":"1.25rem","left":"10rem","right":"10rem"}}},"backgroundColor":"fundo","layout":{"type":"constrained","contentSize":"960px"}} -->
+<div class="wp-block-group has-fundo-background-color has-background" style="padding-top:1.25rem;padding-right:10rem;padding-bottom:1.25rem;padding-left:10rem">
+    
+    <!-- wp:query-title {"type":"archive","style":{"typography":{"fontSize":"2rem","fontWeight":"700","letterSpacing":"-0.015em"},"spacing":{"margin":{"bottom":"1rem"},"padding":{"left":"1rem","right":"1rem"}}},"textColor":"texto-principal"} /-->
+    
+    <!-- wp:term-description {"style":{"spacing":{"margin":{"bottom":"2rem"},"padding":{"left":"1rem","right":"1rem"}}},"textColor":"texto-principal"} /-->
+    
+    <!-- wp:query {"queryId":0,"query":{"perPage":10,"pages":0,"offset":0,"postType":"post","order":"desc","orderBy":"date","author":"","search":"","exclude":[],"sticky":"","inherit":true},"displayLayout":{"type":"list","columns":1}} -->
+    <div class="wp-block-query">
+        
+        <!-- wp:post-template {"style":{"spacing":{"blockGap":"3rem"}}} -->
+        
+            <!-- wp:post-featured-image {"style":{"border":{"radius":"0.5rem"}},"className":"mb-4"} /-->
+            
+            <!-- wp:group {"style":{"spacing":{"blockGap":"1rem"}},"layout":{"type":"constrained"}} -->
+            <div class="wp-block-group">
+                
+                <!-- wp:post-title {"level":2,"isLink":true,"style":{"typography":{"fontSize":"1.375rem","fontWeight":"700","letterSpacing":"-0.015em"},"spacing":{"margin":{"bottom":"0.75rem"}}},"textColor":"texto-principal"} /-->
+                
+                <!-- wp:group {"style":{"spacing":{"blockGap":"0.5rem"}},"layout":{"type":"flex","flexWrap":"wrap"}} -->
+                <div class="wp-block-group">
+                    <!-- wp:post-date {"style":{"typography":{"fontSize":"0.875rem"}},"textColor":"texto-secundario"} /-->
+                    <!-- wp:paragraph {"style":{"typography":{"fontSize":"0.875rem"}},"textColor":"texto-secundario"} -->
+                    <p class="has-texto-secundario-color has-text-color" style="font-size:0.875rem">•</p>
+                    <!-- /wp:paragraph -->
+                    <!-- wp:post-author {"showAvatar":false,"style":{"typography":{"fontSize":"0.875rem"}},"textColor":"texto-secundario"} /-->
+                </div>
+                <!-- /wp:group -->
+                
+                <!-- wp:post-excerpt {"style":{"spacing":{"margin":{"top":"1rem","bottom":"1rem"}}},"fontSize":"medium"} /-->
+                
+                <!-- wp:read-more {"content":"Ler mais","style":{"typography":{"fontSize":"0.875rem","fontWeight":"700","letterSpacing":"0.015em"},"border":{"radius":"0.5rem"},"spacing":{"padding":{"top":"0.625rem","bottom":"0.625rem","left":"1rem","right":"1rem"}}},"backgroundColor":"cinza-claro","textColor":"texto-principal"} /-->
+                
+            </div>
+            <!-- /wp:group -->
+            
+        <!-- /wp:post-template -->
+        
+        <!-- wp:query-pagination {"style":{"spacing":{"margin":{"top":"2rem"}}},"layout":{"type":"flex","justifyContent":"center"}} -->
+        <!-- wp:query-pagination-previous {"label":"« Anterior"} /-->
+        <!-- wp:query-pagination-numbers /-->
+        <!-- wp:query-pagination-next {"label":"Próximo »"} /-->
+        <!-- /wp:query-pagination -->
+        
+        <!-- wp:query-no-results -->
+        <!-- wp:group {"style":{"spacing":{"padding":{"top":"1rem","bottom":"1rem","left":"1rem","right":"1rem"}}},"layout":{"type":"constrained"}} -->
+        <div class="wp-block-group" style="padding-top:1rem;padding-right:1rem;padding-bottom:1rem;padding-left:1rem">
+            <!-- wp:heading {"level":2,"style":{"typography":{"fontSize":"1.375rem","fontWeight":"700","letterSpacing":"-0.015em"}},"textColor":"texto-principal"} -->
+            <h2 class="wp-block-heading has-texto-principal-color has-text-color" style="font-size:1.375rem;font-weight:700;letter-spacing:-0.015em">Nenhum post encontrado</h2>
+            <!-- /wp:heading -->
+            <!-- wp:paragraph {"textColor":"texto-principal"} -->
+            <p class="has-texto-principal-color has-text-color">Não há posts nesta categoria/arquivo ainda.</p>
+            <!-- /wp:paragraph -->
+        </div>
+        <!-- /wp:group -->
+        <!-- /wp:query-no-results -->
+        
+    </div>
+    <!-- /wp:query -->
+    
+</div>
+<!-- /wp:group -->
+
+<!-- wp:template-part {"slug":"footer","tagName":"footer"} /-->
