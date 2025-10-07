@@ -1,94 +1,124 @@
-# Frontend Dev Portfolio - WordPress Theme
+# Frontend Dev Portfolio - WordPress Block Theme
 
-Um tema WordPress moderno e responsivo especialmente criado para desenvolvedores frontend.
+Um tema de blocos WordPress moderno e responsivo especialmente criado para desenvolvedores frontend. Convertido para **Block Theme** com suporte completo ao Site Editor do WordPress.
 
 ## 🎯 Características
 
-- **Design Moderno**: Interface limpa baseada em Tailwind CSS
+- **Block Theme Moderno**: Tema de blocos totalmente editável via Site Editor
+- **Design Profissional**: Interface limpa com tipografia Space Grotesk + Noto Sans
 - **Totalmente Responsivo**: Funciona perfeitamente em todos os dispositivos
-- **Custom Post Types**: Habilidades e Projetos gerenciados separadamente
-- **Formulário de Contato**: Sistema de contato funcional com AJAX
-- **WordPress Customizer**: Personalização fácil através da interface nativa
+- **Site Editor Completo**: Edição visual de templates, cores e tipografia
+- **Theme.json**: Configuração centralizada seguindo padrões WordPress
+- **Block Patterns**: Padrões personalizados incluindo formulário de contato
+- **Template Parts**: Cabeçalho e rodapé reutilizáveis
 - **SEO Optimizado**: Estrutura semântica e otimizada para buscadores
-- **Compatível com Gutenberg**: Suporte completo ao editor de blocos
 
 ## 🚀 Instalação
 
 1. Faça o download ou clone este repositório
 2. Copie a pasta para `/wp-content/themes/`
 3. Ative o tema em **Aparência > Temas**
-4. Configure através de **Aparência > Personalizar**
+4. Configure através do **Site Editor** em **Aparência > Editor do Site**
 
 ## ⚙️ Configuração
 
-### Personalização Básica
+### Site Editor (Recomendado)
+
+1. Acesse **Aparência > Editor do Site**
+2. Edite templates, cores e tipografia visualmente
+3. Personalize:
+   - Templates (página inicial, posts, páginas)
+   - Cores da paleta personalizada
+   - Tipografia (Space Grotesk, Noto Sans)
+   - Layout e espaçamentos
+
+### Customizador WordPress (Alternativo)
 
 1. Acesse **Aparência > Personalizar**
-2. Configure:
-   - Nome do desenvolvedor
-   - Descrição pessoal
-   - Email de contato
+2. Configure opções básicas disponíveis
 
-### Adicionando Habilidades
-
-1. Vá em **Habilidades** no menu administrativo
-2. Adicione suas skills como novos posts
-3. Elas aparecerão automaticamente na seção de habilidades
-
-### Criando Projetos
-
-1. Acesse **Projetos** no menu administrativo
-2. Adicione seus projetos com imagens e descrições
-3. Configure portfolios e cases de sucesso
-
-## 📁 Estrutura do Tema
+## 📁 Estrutura do Block Theme
 
 ```
 wp-luigi-theme/
-├── style.css              # Estilos principais e info do tema
-├── functions.php          # Funções e configurações do tema
-├── index.php             # Template principal de listagem
-├── front-page.php        # Template da página inicial
-├── single.php            # Template para posts individuais
-├── page.php              # Template para páginas estáticas
-├── archive.php           # Template para arquivos
-├── header.php            # Cabeçalho do site
-├── footer.php            # Rodapé do site
-├── js/
-│   └── main.js           # JavaScript principal
-└── readme.txt           # Documentação WordPress
+├── theme.json             # ⭐ Configuração central do tema de blocos
+├── style.css              # Estilos principais (v2.0.1)
+├── functions.php          # Funções adaptadas para blocos
+│
+├── templates/             # 🆕 Templates HTML editáveis
+│   ├── index.html         # Listagem de posts
+│   ├── front-page.html    # Página inicial
+│   ├── single.html        # Posts individuais
+│   ├── page.html          # Páginas estáticas
+│   ├── archive.html       # Archives de categorias/tags
+│   ├── search.html        # Resultados de busca
+│   └── 404.html           # Página de erro 404
+│
+├── parts/                 # 🆕 Template parts reutilizáveis
+│   ├── header.html        # Cabeçalho com navegação
+│   └── footer.html        # Rodapé com links sociais
+│
+├── patterns/              # 🆕 Block patterns personalizados
+│   └── contact-form-simple.php # Formulário de contato
+│
+├── assets/                # Recursos do tema
+│   └── main.js            # JavaScript para interações
+│
+└── readme.txt            # Documentação WordPress
 ```
 
 ## 🎨 Personalização
 
-### Cores e Estilos
+### Site Editor (Principal)
 
-O tema utiliza Tailwind CSS. Para personalizar cores:
+O tema é totalmente editável através do Site Editor:
 
-1. Edite as classes CSS nos templates
-2. Ou adicione CSS personalizado em **Aparência > Personalizar > CSS Adicional**
+1. Acesse **Aparência > Editor do Site**
+2. Edite qualquer template visualmente
+3. Personalize cores da paleta:
+   - Texto Principal (#131516)
+   - Destaque (#293338)
+   - Texto Secundário (#6c757a)
+   - Cinza Claro (#eceeee)
+   - Fundo (#fafafa)
+   - Branco (#ffffff)
+
+### Tipografia
+
+Fontes incluídas:
+- **Space Grotesk**: Títulos e destaques
+- **Noto Sans**: Texto corrido e legibilidade
+
+### Block Patterns
+
+O tema inclui padrões personalizados:
+- Formulário de contato funcional
+- Layouts de seções pré-configurados
 
 ### Menus
 
 1. Vá em **Aparência > Menus**
 2. Crie um novo menu
-3. Atribua à localização "Menu Principal"
+3. Configure através do Site Editor para posicionamento
 
 ## 📧 Formulário de Contato
 
-O formulário de contato é totalmente funcional e:
+O tema inclui um block pattern de formulário de contato:
 
-- Envia emails para o endereço configurado no customizer
-- Utiliza AJAX para envio sem recarregar a página
-- Inclui validação de campos
-- Proteção contra spam com nonce
+- Disponível na biblioteca de padrões do Site Editor
+- Design integrado ao tema
+- Funcional com plugins de formulário compatíveis
+- Estilização responsiva incluída
 
 ## 🔧 Recursos Técnicos
 
-- **WordPress 5.0+** requerido
+- **WordPress 6.0+** requerido (para suporte completo a Block Themes)
 - **PHP 7.4+** requerido
-- Suporte a Custom Post Types
-- Integração com WordPress REST API
+- **Theme.json v2**: Configuração moderna do tema
+- Suporte completo ao Site Editor (FSE)
+- Templates HTML editáveis
+- Block patterns personalizados
+- Template parts reutilizáveis
 - Otimizado para performance
 - Código limpo e documentado
 
@@ -102,21 +132,28 @@ O tema é totalmente responsivo com breakpoints:
 
 ## 🛠️ Desenvolvimento
 
-### Estrutura de Arquivos
+### Estrutura Block Theme
 
-- Templates PHP seguem hierarquia WordPress
-- JavaScript modular em `/js/main.js`
-- Estilos em `style.css` com Tailwind CDN
-- Funções organizadas em `functions.php`
+- **theme.json**: Configuração central do tema
+- **Templates HTML**: Editáveis via Site Editor
+- **Template Parts**: Componentes reutilizáveis (header/footer)
+- **Block Patterns**: Padrões de layout pré-configurados
+- **JavaScript**: Funcionalidades em `/assets/main.js`
+- **Estilos**: CSS complementar em `style.css`
+
+### Arquivos de Configuração
+
+- `theme.json`: Paleta de cores, tipografia, layouts
+- `functions.php`: Funções adaptadas para Block Theme
+- `style.css`: Estilos base e complementares
 
 ### Hooks e Filtros
 
-O tema utiliza hooks WordPress padrão:
+O tema utiliza hooks WordPress modernos:
 
-- `wp_enqueue_scripts` para CSS/JS
-- `after_setup_theme` para configurações
-- `init` para Custom Post Types
-- `customize_register` para customizer
+- `after_setup_theme` para configurações do tema
+- `wp_enqueue_scripts` para assets
+- Suporte nativo a Block Theme features
 
 ## 📄 Licença
 
@@ -142,4 +179,17 @@ Para suporte ou dúvidas sobre o tema, abra uma issue no repositório do GitHub.
 
 ## 🔄 Atualizações
 
-- **v1.0.0**: Lançamento inicial com todas as funcionalidades básicas
+- **v2.0.1**: Tema convertido para Block Theme com Site Editor completo
+- **v1.0.0**: Versão inicial como tema clássico
+
+## 📋 Histórico de Conversão
+
+Este tema foi **convertido de tema clássico para Block Theme**, mantendo 100% da identidade visual original e adicionando:
+
+- Site Editor completo
+- Templates HTML editáveis
+- Configuração via theme.json
+- Block patterns personalizados
+- Template parts reutilizáveis
+
+Consulte `BLOCK-THEME-CONVERSION.md` para detalhes completos da conversão.
